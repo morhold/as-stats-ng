@@ -1,6 +1,6 @@
 FROM alpine:3.3
 
-RUN apk add --no-cache php-xml php-sqlite3 libc-dev perl-dev gcc supervisor nginx bash curl perl rrdtool make perl-rrd git php-fpm ttf-dejavu tzdata && rm -rf /var/cache/apk/*
+RUN apk add --no-cache mc tcpdump php-xml php-sqlite3 libc-dev perl-dev gcc supervisor nginx bash curl perl rrdtool make perl-rrd git php-fpm ttf-dejavu tzdata && rm -rf /var/cache/apk/*
 
 WORKDIR /root/
 

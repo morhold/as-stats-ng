@@ -2,7 +2,7 @@ version: '2'
 
 services:
   as-stats:
-    image: archaron/as-stats-ng:latest
+    image: morhold/as-stats-ng:latest
     ports:
       - "8080:80"
       - "9996:9996/udp"

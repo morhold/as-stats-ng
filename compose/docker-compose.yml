@@ -5,11 +5,12 @@ services:
     image: archaron/as-stats-ng:latest
     ports:
       - "8080:80"
-      - "5000:5000/udp"
+      - "9996:9996/udp"
     environment:
       - NETFLOW=1
-      - NETFLOW_PORT=5000
+      - NETFLOW_PORT=9996
       - TZ=Europe/Moscow
     volumes:
       - ./as-stats:/data/as-stats
+    network_mode: host 
     restart: always

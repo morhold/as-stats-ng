@@ -1,1 +1,9 @@
-*/10	*	*	*	*	/root/AS-Stats/bin/rrd-extractstats.pl /data/as-stats/rrd /data/as-stats/conf/knownlinks /data/as-stats/asstats_day.txt
+#day
+0	*	*	*	*	/root/AS-Stats/bin/rrd-extractstats.pl /data/as-stats/rrd /data/as-stats/conf/knownlinks /data/as-stats/asstats_day.txt
+
+#weeks
+0   0   *   *   0   /root/AS-Stats/bin/rrd-extractstats.pl /data/as-stats/rrd /data/as-stats/conf/knownlinks /data/as-stats/asstats_week.txt 168
+
+#monts
+0   0   1   *   *   /root/AS-Stats/bin/rrd-extractstats.pl /data/as-stats/rrd /data/as-stats/conf/knownlinks /data/as-stats/asstats_month.txt 720
+
